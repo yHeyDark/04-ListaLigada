@@ -83,7 +83,7 @@ Antes de começar, entenda a estrutura do código que você recebeu:
 
 ## Sua Missão: Atividade Proposta
 
-Faça um *fork* do repositório (ou salve uma cópia dos arquivos) e complete as tarefas abaixo.
+Faça um *fork* do repositório  e complete as tarefas abaixo.
 
 ### Tarefa 1: Impedir Valores Duplicados em `inserirElemento`
 
@@ -136,6 +136,20 @@ Após implementar as funções, use o menu para testar exaustivamente sua lógic
       * **Excluir o último:** Insira 40. A lista é [20, 30, 40]. Exclua o 40. Exiba a lista. Ela deve conter [20, 30].
       * **Excluir do meio:** Exclua o 30. Exiba a lista. Ela deve conter [20].
 5.  **Verificação Final**: Verifique se a quantidade de elementos é atualizada corretamente após cada inserção e exclusão.
+
+
+## Checklist de Entrega
+
+Antes de submeter sua atividade, verifique se você completou todos os itens abaixo.
+
+  * **[ ]** A função `inserirElemento` foi alterada para não permitir a inserção de valores duplicados.
+  * **[ ]** A função `buscarElemento` foi implementada e exibe a mensagem correta se o elemento é encontrado ou não.
+  * **[ ]** A função `excluirElemento` foi implementada e trata corretamente a exclusão de um elemento no início, meio ou fim da lista.
+  * **[ ]** O código foi compilado sem erros e testado, passando por todos os cenários sugeridos no roteiro de testes.
+  * **[ ]** O código está salvo no seu repositório Git pessoal 
+
+**Como entregar:**
+Copie o link do seu repositório e cole-o na tarefa correspondente no Microsoft Teams para avaliação.
 
 ## Recursos Adicionais e Referências
 
