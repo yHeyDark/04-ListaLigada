@@ -154,20 +154,28 @@ void excluirElemento()
 	cin >> numero;
 	NO* posicao = posicaoElemento(numero);
 	if (posicao == NULL) {
-		cout << "Elemento nao existe na lista";
+		cout << "Elemento nao existe na lista" << endl ;
+		return;
 	}
 	else {
 		// funcao para excluir o elemento
+		if (posicao == NULL) {
+			cout << "a posicao informada nao e valida" << endl;
+			return;
+		}
 		if (posicao == primeiro) {
 			primeiro = primeiro->prox;
+			free(posicao);
+			cout << "Elemento excluido" << endl;
 		}
 		else {
-			NO* aux = primeiro;
-			while (aux->prox != posicao) {
-				aux = aux->prox;
-				free(posicao);
-				cout << "Elemento excluido";
+			NO* anterior = primeiro;
+			while (anterior->prox != posicao) {
+				anterior = anterior->prox;
 			}
+			anterior->prox = posicao->prox;
+			free(posicao);
+			cout << "Elemento não Encontrado" << endl;
 		}
 	}
 }
